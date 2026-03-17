@@ -237,14 +237,7 @@ def process_new_element(user_input):
     # Далее идет логика добавления элемента...
     choose_reports_for_adding(new_element)
 
-    # Проверяем наличие обязательных полей
-    required_fields = ["label", "type"]
-    if any(field not in new_element for field in required_fields):
-        messagebox.showerror("Ошибка", "Элемент должен содержать поля label и type.")
-        return
 
-    # Начинаем процедуру добавления элемента
-    choose_reports_for_adding(new_element)
 
 # Добавление элемента в отчет
 def add_element_to_report(report_id, element):
