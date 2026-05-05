@@ -318,13 +318,13 @@ class UpdateWindow:
     def __init__(self, master):
         self.master = master
         self.master.title("Launcher")
-        self.master.geometry("310x210")
+        self.master.geometry("320x220")
         
         # Центрирование окна на экране (ИСПРАВЛЕНО: 210 вместо 680)
         ws = self.master.winfo_screenwidth()
         hs = self.master.winfo_screenheight()
-        x = (ws // 2) - (310 // 2)
-        y = (hs // 2) - (210 // 2) 
+        x = (ws // 2) - (320 // 2)
+        y = (hs // 2) - (220 // 2) 
         y = y - 220 
         self.master.geometry('+{}+{}'.format(x, y))
         
