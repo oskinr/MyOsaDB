@@ -1,0 +1,24 @@
+# Исключаем виртуальное окружение Python
+venv/ export-ignore
+
+# Исключаем папку с большими данными
+data/ export-ignore
+
+# Исключаем временные файлы и кеши
+*.pyc export-ignore
+__pycache__/ export-ignore
+
+# Исключаем зависимости Node.js (если есть)
+node_modules/ export-ignore
+
+# Исключаем саму папку .git и другие служебные файлы
+.git/ export-ignore
+
+
+# Игнорируем указанные файлы при скачивании релиза
+
+sql_module.py export-ignore
+zamenatk.py export-ignore
+132.db3 export-ignore
+osadb.py export-ignore
+SQL_module.py export-ignore
